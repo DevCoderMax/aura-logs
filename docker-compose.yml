@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  aura-logs-api:
+    build: .
+    ports:
+      - "8025:8025"
+    volumes:
+      - ./db:/app/db
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    restart: unless-stopped

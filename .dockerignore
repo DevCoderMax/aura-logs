@@ -1,0 +1,36 @@
+# Arquivos e diretórios a serem ignorados pelo Docker
+
+# Ambiente virtual
+.venv/
+venv/
+ENV/
+
+# Arquivos de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Arquivos de ambiente
+.env
+
+# Banco de dados SQLite
+*.db
+
+# Arquivos de log
+*.log
+
+# Diretórios de desenvolvimento
+.git/
+.github/
+.vscode/
+.idea/
+
+# Arquivos de teste
+teste.py
+
+# Outros
+.DS_Store
+.dockerignore
+Dockerfile
